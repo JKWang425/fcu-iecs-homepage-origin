@@ -834,6 +834,36 @@
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./static/js/web_index.682f25d0b190.js"></script>
+    <script>
+        (function() {
+            const formats = ['webp', 'avif'];
+            const imgs = Array.from(document.querySelectorAll('img'));
+            function loadFormat(src, fmt) {
+                return new Promise(resolve => {
+                    const test = new Image();
+                    test.onload = () => resolve(src + '.' + fmt);
+                    test.onerror = () => resolve(null);
+                    test.src = src + '.' + fmt;
+                });
+            }
+            function processImage(img) {
+                const src = img.getAttribute('src');
+                if (!src || !src.startsWith('./media/img/')) return;
+                img.loading = 'lazy';
+                img.decoding = 'async';
+                (async () => {
+                    for (const fmt of formats) {
+                        const candidate = await loadFormat(src, fmt);
+                        if (candidate) {
+                            img.src = candidate;
+                            return;
+                        }
+                    }
+                })();
+            }
+            imgs.forEach(processImage);
+        })();
+    </script>
 
 </body>
 </html>
