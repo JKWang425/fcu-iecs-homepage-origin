@@ -222,13 +222,13 @@ footer {
     padding: 0;
     position: relative;
     clear: both;
-    color: #a8b0b3;
+    color: #e2e8f0;
 }
 
 footer a {
     text-decoration: none;
     font-size: 13px;
-    color: #a8b0b3;
+    color: #e2e8f0;
 }
 
 footer li {
@@ -245,7 +245,7 @@ footer p {
     font-size: 13px;
     line-height: 26px;
     padding-bottom: 5px !important;
-    color: #a8b0b3;
+    color: #e2e8f0;
 }
 
 footer .social-icons li {
