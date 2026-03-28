@@ -710,8 +710,10 @@ footer ul.social-icons {
 }
 
 .section-index-index .swiper-slide img {
-    width: 360px;
-    aspect-ratio: 16/9;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    display: block;
 }
 
 .section-index-index .index-about-backgroundimg {
