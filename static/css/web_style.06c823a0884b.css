@@ -636,14 +636,15 @@ footer ul.social-icons {
 }
 
 .section-index-index .honor-card .card-body p {
-    color: #FC766A;
+    color: #D33F33;
     font-weight: 700;
 }
 
 .section-index-index .custom-btn-style {
     background-color: #1b9dff;
     border-color: #1b9dff #1b9dff #0084e7;
-    color: #ffffff;
+    color: #212529;
+    font-weight: 700;
     padding: 0.7rem 2rem;
     border-radius: 50px;
     font-size: 12px;
@@ -657,7 +658,7 @@ footer ul.social-icons {
 .section-index-index .custom-btn-style:hover {
     background-color: #41adff;
     border-color: #4eb3ff #4eb3ff #1b9dff;
-    color: #ffffff;
+    color: #212529;
 }
 
 .section-index-index .swiper button {
@@ -764,7 +765,7 @@ footer ul.social-icons {
 .section-index-index .post-event-date {
     padding: 15px 20px;
     background-color: #1b9dff;
-    color: #ffffff;
+    color: #212529;
     font-size: 12px;
     margin-right: 30px;
 }
